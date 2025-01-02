@@ -14,8 +14,6 @@ var audio_clips : Dictionary = {}
 
 func _ready():
 	for sound_entry in sounds:
-		print("Sound Entry: ", sound_entry)
-		print("Audio: ", sound_entry.audio)
 		if sound_entry.audio != null and sound_entry.audio is AudioStream:
 			audio_clips[sound_entry.audio_name] = sound_entry
 		else:
