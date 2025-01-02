@@ -1,36 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://c00623ghoudr"]
+[gd_scene load_steps=2 format=3 uid="uid://c00623ghoudr"]
 
 [ext_resource type="Script" path="res://addons/audio_manager/AudioManager.gd" id="1_ig3wi"]
-[ext_resource type="Script" path="res://addons/audio_manager/SoundEntry.gd" id="2_o443e"]
-[ext_resource type="AudioStream" uid="uid://deobsmx0v80q1" path="res://sounds/coin_collect_sfx.wav" id="2_xpfs3"]
-[ext_resource type="AudioStream" uid="uid://c10y37gug1cpw" path="res://sounds/jump_sfx.wav" id="4_7tc06"]
-[ext_resource type="AudioStream" uid="uid://dle2nwgbsklti" path="res://sounds/break_sfx.wav" id="5_30l1p"]
-
-[sub_resource type="Resource" id="Resource_inxen"]
-script = ExtResource("2_o443e")
-audio_name = "coin"
-audio = ExtResource("2_xpfs3")
-
-[sub_resource type="Resource" id="Resource_i78oj"]
-script = ExtResource("2_o443e")
-audio_name = "jump"
-audio = ExtResource("4_7tc06")
-
-[sub_resource type="Resource" id="Resource_biyx5"]
-script = ExtResource("2_o443e")
-audio_name = "break_box"
-audio = ExtResource("5_30l1p")
-
-[sub_resource type="Resource" id="Resource_phv4r"]
-script = ExtResource("2_o443e")
-audio_name = "hit_block"
-audio = ExtResource("2_xpfs3")
-
-[sub_resource type="Resource" id="Resource_3wxv2"]
-script = ExtResource("2_o443e")
-audio_name = "NOVO"
-audio = ExtResource("4_7tc06")
 
 [node name="AudioManager" type="Node2D"]
 script = ExtResource("1_ig3wi")
-sounds = Array[ExtResource("2_o443e")]([SubResource("Resource_inxen"), SubResource("Resource_i78oj"), SubResource("Resource_biyx5"), SubResource("Resource_phv4r"), SubResource("Resource_3wxv2")])
