@@ -2,7 +2,7 @@
 extends EditorPlugin
 
 var audio_manager : Script
-
+var audio_manager_icon : Texture2D
 
 func _enter_tree():
 	#Reference to Audio Manager Scene
