@@ -9,7 +9,7 @@ extends Node2D
 @export_subgroup("List of sounds", "sounds_")
 @export var sounds: Array[SoundEntry] = []
 
-
+#Clip Dictionary
 var audio_clips : Dictionary = {}
 
 func _ready():
